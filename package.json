@@ -3,7 +3,7 @@
   "version": "1.1.1",
   "description": "coachshake: An Ionic project",
   "scripts": {
-    //"start": "./node_modules/ionic/bin/ionic serve"
+    "start": "./node_modules/ionic/bin/ionic serve"
   },
   "engines": {
     "node": "<=0.12.18"
