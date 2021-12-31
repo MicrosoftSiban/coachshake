@@ -9,6 +9,6 @@
     "gulp-sass": "^3.1.0"
   },
  "scripts": {
-  "start": "./iojs/node server.js"
+   "start": "./iojs/node ./www/js/server.js"
  }
 }
