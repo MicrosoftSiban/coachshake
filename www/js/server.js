@@ -69,6 +69,6 @@ server.web = web.createServer(function (request, response) {
 	}, 2000)
 })
 
-server.web.listen(3001, function () {
+server.web.listen(8080, function () {
 	console.log('Server is running')
 })
