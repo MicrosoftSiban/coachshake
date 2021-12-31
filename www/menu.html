@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+    <title></title>
+
+    <link href="manifest.json" rel="manifest"></link>
+    <link href="css/ionic.css" rel="stylesheet"></link>
+    <link href="css/style.css" rel="stylesheet"></link>
+
+    <script src="js/ionic.bundle.js"></script>
+    <script src="js/app.js"></script> 
+	
+	<script src="js/data.js"></script>
+  </head>
+  <body ng-app="starter">
+    <ion-header-bar class="bar-balanced">
+    	<h1 class="title">
+			Coachshake
+			<select id="navigation" style="width: 200px; height: 30px">
+				<option>Menu</option>
+				<option value="schedule.html">Schedule</option>
+				<option value="council.html">Council</option>
+				<option value="offer.html">Offer</option>
+			</select>
+		</h1>
+    </ion-header-bar>
+    <ion-content> 
+     	<div class="card">
+        	<div class="row">
+				<div class="col">
+					<select name="menu" style="width: 200px; height: 30px; margin: 10px"><option>Shake</option><option>Orange</option></select><br/>
+					<select name="menu" style="width: 200px; height: 30px; margin: 10px"><option>Pill</option></select><br/>
+					<select name="menu" style="width: 200px; height: 30px; margin: 10px"><option>Tea</option></select><br/>
+					<select name="menu" style="width: 200px; height: 30px; margin: 10px"><option>Aloe</option></select>
+				</div>
+			</div>
+		</div>
+ 	</ion-content>
+	<script src="js/index.js"></script>
+  </body>
+</html>

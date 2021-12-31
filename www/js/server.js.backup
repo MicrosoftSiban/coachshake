@@ -1,0 +1,219 @@
+	// BUG: undefined on first database call
+	//var fail = (database.results == undefined)
+	//if(fail) { database.call(server.task, server.URL.parameters) }
+
+//var wait = function(duration) {
+	//	if(database.results == undefined) {
+	//		setTimeout(wait, duration)
+	//	}
+	//}
+	//wait(100)
+
+filestream.readFile('people.json', function(error, data) {
+		response.writeHead(200, {'Content-Type': 'application/json'})
+		response.write(data)
+		response.end()
+	})
+	
+console.log('Setup for redirect', request.url)
+	//var redirect = '' 
+	//var host = 'https://aquaogen-abakasam720639.codeanyapp.com' 
+	
+	//var parameters = url.parse(request.url,true).query 
+	
+	//response.writeHead(302, { location: redirect })
+	//response.end()
+
+var query = ''
+	var path = parameters.task 
+	
+	console.log('PATH: ', path)
+	if(path == 'phone') {
+		redirect = host + '/council.html'
+		query = 'SELECT * FROM HISTORY WHERE PHONE = ' + parameters.number
+	} 
+	if(path == 'history') { 
+		redirect = host + '/council.html' 
+		query = 'INSERT INTO HISTORY (PHONE, ONE, TWO, THREE, FOUR, FIVE) VALUES (' + parameters.number + ', "none", "none", "none", "none", "none")'
+	} 
+	if(path == 'appointments') { 
+		redirect = host + '/council.html' 
+		query = 'SELECT * FROM HISTORY WHERE PHONE = ' + parameters.number + ';'
+		query += 'SELECT TIME FROM APPOINTMENTS WHERE PHONE = ' + parameters.number
+	}
+	if(path == 'delivery') {
+		redirect = host + '/delivery.html' 
+		query = 'INSERT INTO ORDERS (PHONE, ITEM, LOCATION, TIME) VALUES (' + parameters.number + ', ' + parameters.item + ', ' + parameters.location + ', ' + parameters.time + ')'
+	}
+	if(path == 'schedule') { 
+		redirect = host + '/schedule.html' 
+		query = 'SELECT * FROM ORDERS WHERE PHONE =' + parameters.number
+	} 
+	
+	console.log('Query database', query)
+	var mysql = require("mysql")
+	var configuration = {
+		host: 'us-cdbr-east-04.cleardb.com',
+		user: 'b8f3dd1d8d9c29',
+		password: '0611b499',
+		database: 'heroku_23ebff43a942f06',
+		multipleStatements: true
+	}
+	var connection = mysql.createConnection(configuration)
+
+	connection.connect(function(error) {
+		if(error) {
+			return console.error('error: ' + error.message)
+		}
+
+		console.log('Connected to the MySQL serer.')
+	}) 
+	
+	console.log(query)
+	connection.query(query, function(error, results, fields) {
+		console.log('results: ' + JSON.stringify(results))
+		
+		filestream.writeFile('data.js', 'data = ' + JSON.stringify(results) + '; task = "' + parameters.task + '"; id = "' + parameters.number + '"', function(error) {
+			if(error) throw error
+
+			console.log('It saved!')
+		})
+	})
+	connection.end() 
+
+queryB = 'INSERT INTO HISTORY (PHONE, ONE, TWO, THREE, FOUR, FIVE) VALUES (' + parameters.number + ', "none", "none", "none", "none", "none")' 
+		queryC = 'SELECT * FROM APPOINTMENTS WHERE PHONE = ' + parameters.number 
+		queryD = 'INSERT INTO HISTORY (PHONE, TIME) VALUES ?'
+
+filestream.writeFile('data.js', 'data = ' + JSON.stringify(results) + '; task = "phone" ; module.exports = {data, task}', function(error) {
+		if(error) throw error
+
+		console.log('It saved!')
+	})
+
+
+var mysql = require("mysql")
+var configuration = {
+  host: 'us-cdbr-east-04.cleardb.com',
+  user: 'b8f3dd1d8d9c29',
+  password: '0611b499',
+  database: 'heroku_23ebff43a942f06',
+  multipleStatements: true
+}
+var connection = mysql.createConnection(configuration)
+connection.connect(function(error) {
+	if(error) {
+		return console.error('error: ' + error.message)
+	}
+
+	console.log('Connected to the MySQL serer.')
+})
+
+	var query = "SELECT * FROM ORDERS" 
+	if(query != "") {
+		connection.query(query, function(error, results, fields) {
+			if(error) {
+				console.log(error.message)
+			} 
+			
+			console.log(JSON.stringify(results))
+			
+			//filestream.writeFile('data.js', 'data = {phone: 3469322511, task: "phone"}', function(error) { 
+			filestream.writeFile('data.js', 'data = ' + JSON.stringify(results) + '; task = "phone"', function(error) {
+				if(error) throw error
+
+				console.log('It saved!')
+			})
+		}) 
+		
+		connection.end()
+	}	
+
+
+
+
+
+var filestream = require('fs')
+var contents = filestream.readFileSync('../index.html', 'utf8')
+
+
+if(request.url == "/phone") { 
+		
+		//https://holycoders.com/tutorial/get-url-parameters-query-strings-node-js/
+		//https://usefulangle.com/post/91/nodejs-get-url-parameters  
+		
+		redirect from localhost of ionic serve when here
+	
+		response.write(contents) 
+		response.end()
+	}
+
+var connection = mysql.createConnection(configuration)
+connection.connect()
+var query = "SHOW DATABASES"
+
+connection.query(query, function(error, results, fields) {
+  if(error) { console.log(error.message) }
+
+  filestream.writeFile('message.json', JSON.stringify(results), function(error) {
+  	if(error) throw error
+  	console.log('It saved!')
+  })
+})
+
+
+var environment = {
+    KAMATERA: {
+        PORT: ''
+    },
+    CODEANYWHERE: {
+        PORT: 3000
+    },
+    HEROKU: {
+        PORT: ''
+    }
+};
+
+
+var http = {
+	codes: {
+		REQUEST:  {
+			OK: 200,
+			UNAUTHORIZED: 401,
+			DENY: 403,
+			BAD: 404,
+			TIMEOUT: 408
+		},
+		ERROR: {
+			SERVER: 500,
+			GATEWAY: 502,
+			UNAVAILABLE: 503
+		}
+	}
+}
+
+
+	if (request.url == "/") {
+        filestream.readFile("../www/html/index.html", function (error, response) {
+            if (error) {
+                response.writeHead(http.codes.REQUEST.BAD);
+                response.write('Contents you are looking are Not Found');
+            } else {
+                response.writeHead(http.codes.REQUEST.OK, { 'Content-Type': 'text/html' });
+                response.write(response);
+            }
+             
+            response.end();
+        });
+    } else {
+        
+        response.writeHead(http.codes.REQUEST.OK, { 'Content-Type': 'text/html' });
+        response.write('<h1>Product Manaager</h1><br /><br />To create product please enter: ' + request.url);
+        response.end();
+    }    
+    response.writeHead(http.codes.REQUEST.OK, {
+        'Content-Length': Buffer.byteLength(page),
+        'Content-Type': 'text/html'
+    })
+    .end(page);
+	response.end();

@@ -1,0 +1,27 @@
+
+
+select {
+    font-size: 25px;
+    height: 50px;
+    text-align-last: center;
+    width: 200px;
+}
+
+.day {
+    font-size: 30px;
+    padding-top: 10px;
+    text-align: center;
+}
+.choice {
+    font-size: 25px;
+    height: 50px;
+    margin: 5px;
+    text-align-last: center;
+    width: 200px; 
+}
+
+[name="item"] {
+    height: 150px;
+    padding-top: 75px;
+    text-align: center;
+}

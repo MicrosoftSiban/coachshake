@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+    <title></title>
+
+    <link href="manifest.json" rel="manifest"></link>
+    <link href="css/ionic.css" rel="stylesheet"></link>
+    <link href="css/style.css" rel="stylesheet"></link>
+
+    <script src="js/ionic.bundle.js"></script>
+    <script src="js/app.js"></script> 
+	
+	<script src="js/data.js"></script>
+  </head>
+  <body ng-app="starter">
+    <ion-header-bar class="bar-balanced">
+    	<h1 class="title">
+			Coachshake
+			<select id="navigation" style="width: 200px; height: 30px">
+				<option value="offer.html">Offer</option>
+				<option value="council.html">Council</option>
+				<option value="schedule.html">Schedule</option>
+			</select>
+		</h1>
+    </ion-header-bar>
+    <ion-content>
+		<div class="card">
+			<div class="row">
+				<div id="herbalife" class="col">
+					<a href="https://hbzoom.com" target="_blank" class="button button-calm">Herbalife Work</a>
+				</div>
+			</div>
+		</div>
+		<div id="plans" class="card">
+			<div class="row">
+				<div id="offers" class="col">
+					1. none<br/>2. none<br/>3. none<br/>4. none<br/>5. none
+				</div>
+			</div>
+		</div>
+ 	</ion-content>
+	<script src="js/index.js"></script>
+  </body>
+</html>

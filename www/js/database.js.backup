@@ -1,0 +1,219 @@
+var inputData = '';
+var readStream = fs.createReadStream('output.txt');
+
+readStream.setEncoding('UTF8');
+
+readStream.on('data', function(chunk){
+	inputData += chunk;
+});
+
+readStream.on('end', function(){
+	console.log('Reading Finished');
+	console.log(inputData);
+});
+
+readStream.on('error', function(err){
+	console.log(err.stack);
+});
+
+var call = (connection.query('SELECT * FROM ORDERS WHERE PHONE = ?', '3469322511', function(error, results, fields) {
+	if (error) {
+		console.log(error.message)
+	}
+
+	console.log(SQL)
+	console.log(results)
+
+	return results
+}))(results)
+
+	var data
+	var charsInBody = (function () {
+
+	data = 1
+	  return data
+	})(data)
+	
+	console.log(data)
+
+console.log(results)
+
+
+var data
+	var charsInBody = (function () {
+
+	data = 1
+	  return data
+	})(data)
+	
+	console.log(data)
+	
+	//database.call(query[server.URL.parameters.task], server.URL.parameters[query.placeholder[server.URL.parameters.task]])
+	
+	//var promise = database.call(query[server.URL.parameters.task], server.URL.parameters[query.placeholder[server.URL.parameters.task]])
+	
+	//database.call(query[server.URL.parameters.task], server.URL.parameters[query.placeholder[server.URL.parameters.task]]).then(function(value) {
+	//	promise.then(function(valueB) {
+	//		console.log(value)
+	//		console.log(valueB)
+	//	})
+	//})
+
+	var data
+	var charsInBody = (function () {
+
+	data = 1
+	  return data
+	})(data)
+	
+	console.log(data)
+
+
+module.exports = { call }
+
+function search(SQL, record) {
+	return new Promise(function(resolve, reject) {
+		var connection = mysql.createConnection(configuration)
+
+		connection.connect(function(error) {
+			if (error) {
+				return console.error('error: ' + error.message)
+			}
+
+			console.log('Connected to the MySQL serer')
+		})
+
+		
+		
+		connection.query(SQL, record, function(error, results, fields) {
+			if (error) {
+				console.log(error.message)
+			}
+
+			console.log(SQL)
+			console.log(results)
+			resolve(JSON.stringify(results))
+		})
+		
+		connection.destroy()
+	})
+}
+
+function call(query, placeholder) { 
+	return search(query, placeholder)	
+}
+
+function call(SQL, record, callback) {
+	console.log(SQL)
+	console.log(record)
+	
+	var connection = mysql.createConnection(configuration)
+
+	connection.connect(function(error) {
+		if (error) {
+			return console.error('error: ' + error.message)
+		}
+
+		console.log('Connected to the MySQL serer')
+	})
+	
+	connection.query(SQL, record, function(error, results, fields) {
+		if (error) {
+			console.log(error.message)
+		}
+
+		callback(null, JSON.stringify(results))
+	})
+	
+	connection.destroy()
+}
+
+
+function search(SQL, record) {
+	return new Promise(function(resolve, reject) {
+		var connection = mysql.createConnection(configuration)
+
+		connection.connect(function(error) {
+			if (error) {
+				return console.error('error: ' + error.message)
+			}
+
+			console.log('Connected to the MySQL serer')
+		})
+		
+		connection.query(SQL, record, function(error, results, fields) {
+			if (error) {
+				console.log(error.message)
+			}
+
+			console.log(SQL)
+			console.log(results)
+			resolve(JSON.stringify(results))
+		})
+		
+		connection.destroy()
+	})
+}
+
+function call(query, placeholder) { 
+	return search(query, placeholder)	
+}
+
+module.exports = { call }
+
+var setH = new Promise((resolve, reject) => {
+		h.responseHeaders.push({
+			name: 'Set-Cookie',
+			value: "test=123"
+		});
+		resolve({responseHeaders: h.responseHeaders});
+	});
+
+/var query = "SHOW DATABASES; USE heroku_23ebff43a942f06; SELECT * FROM ORDERS";
+//var query = 'SELECT * FROM ORDERS; CREATE TABLE HISTORY ( PHONE VARCHAR(11) PRIMARY KEY, ONE VARCHAR(50), TWO VARCHAR(50), THREE VARCHAR(50), FOUR VARCHAR(50), FIVE VARCHAR(50));'
+//var query = 'SELECT * FROM HISTORY'
+
+	//var output = search(query, placeholder).then(function(results) {
+	//	return 'hello'
+	//})
+
+var query = 'SELECT * FROM ORDERS'
+var file = { 
+  'name': 'message.json',
+  'system': require('fs') 
+};
+
+//file.system.readFile(file.name, function(error, data) {
+//  if(error) throw error;
+//  console.log(JSON.parse(data)[0]);
+//});
+
+	  //file.system.writeFile(file.name, JSON.stringify(results), function(error) {
+	  //  if(error) throw error;
+	  //  console.log('It saved!');
+	  //});
+	  
+	connection.query(SQL, placeholder, function(error, results, fields) {
+	  if(error) {
+			console.log(error.message)
+	  } 
+
+		resolve(JSON.stringify(results))
+	})
+
+	//global.SQL = query[server.URL.parameters.task]
+	//global.placeholder = query[server.URL.parameters.task]
+	//console.log(SQL, placeholder)
+	
+		var resolvedProm = Promise.resolve(33)
+
+	var thenProm = resolvedProm.then(function(value) {
+		return value
+	})
+
+	var value
+	setTimeout(value = function() {
+		return thenProm.PromiseValue
+	})
+
+	console.log(value)
