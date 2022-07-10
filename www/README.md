@@ -1,6 +1,7 @@
-### :point_right: This starter repo has moved to the [ionic-team/starters](https://github.com/ionic-team/starters/tree/master/ionic1/official/blank) repo! :point_left:
 
 mysqltutorial.org
+
+# Basic MySQL Script
 
 var mysql = require("mysql")
 
@@ -17,11 +18,15 @@ var connection = mysql.createConnection(configuration)
 var SQL = 'SHOW TABLES'
 connection.query(SQL, [], function(errors, results, fields) { console.log(results) })
 
+# Table Setup
+
 Tables:
 	HISTORY (PHONE VARCHAR(10), ONE VARCHAR(50), TWO VARCHAR(50), THREE VARCHAR(50), FOUR VARCHAR(50), FIVE VARCHAR(50), APPOINTMENT VARCHAR(18))
 	APPOINTMENTS (AVAILABLE VARCHAR(18))
 		AVAILABLE = 'MM/DD/YYYY HH:MM(AM/PM)'
 	ORDERS (PHONE VARCHAR(10), ITEM VARCHAR(100), LOCATION VARCHAR(200), TIME VARCHAR(50))
+
+# Common SQL
 
 USE DATABASE
 SHOW TABLES
@@ -35,6 +40,8 @@ SELECT * FROM TABLE_NAME
 SELECT * FROM TABLE_NAME WHERE COLUMN_NAME = ?
 INSERT INTO TABLE_NAME (COLUMN_NAME) SELECT COLUMN_NAME FROM TABLE_NAME WHERE COLUMN_NAME = ?
 INSERT INTO TABLE_NAME (COLUMN_NAME) VALUES (?) --> connection.query(SQL, [[?]], function(errors, results, fields) {}), (?) = [[?]]
+
+# Page SQL
 
 LOGIN     SELECT * FROM HISTORY WHERE PHONE = ?
 SCHEDULE  SELECT TIME FROM APPOINTMENTS WHERE PHONE = ?

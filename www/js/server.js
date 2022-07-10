@@ -6,7 +6,7 @@ var email = require('emailjs')
 var server = {
 	using: 'Codeanywhere',
 	URL: {
-		Codeanywhere: 'https://aquaogen-abakasam720639.codeanyapp.com/',
+		Codeanywhere: 'https://drifty-abakasam720639.codeanyapp.com/',
 		Heroku: ''
 	},
 	redirect: {
@@ -69,6 +69,6 @@ server.web = web.createServer(function (request, response) {
 	}, 2000)
 })
 
-server.web.listen(8080, function () {
+server.web.listen(3001, function () {
 	console.log('Server is running')
 })

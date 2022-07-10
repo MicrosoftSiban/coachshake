@@ -1,38 +1,22 @@
 # Ionic 
 
-## Install
-```
-mkdir ionic-1.3.4
-cd ionic-1.3.4
-wget https://github.com/Sammight/ionic/releases/download/purejs/ionic-1.3.4.gz
-tar -xvf ionic-1.3.4.gz
-cd bin
-node ionic
-```
-
-# Test
-```
-pwd
-...ionic-1.3.4/bin/myProgram
-node ionic serve
-```
-
-
-# Ionic-Cli
-=========
-
-The Ionic Framework command line utility makes it easy to start, build, run, and emulate [Ionic](http://ionicframework.com/) apps. In the future, it will also have support for our mobile development services and tools that make Ionic even more powerful.
-
-Use the `ionic --help` command for more detailed task information.
-
-## Installing
 
 ```bash
-$ npm install -g ionic
+$ git clone https://github.com/abakasam-development/ionic.git
+$ cd ionic
+$ iojs-3.3.1/node node_modules/cordova/bin/cordova
+$ iojs-3.3.1/node bin/ionic
+$ cd starter/blank
+$ ../../iojs-3.3.1/node ../../bin/ionic serve
 ```
+https://localhost:8100
 
-*Note: For a global install of `-g ionic`, OSX/Linux users may need to prefix the command with `sudo`.*
+IONICFRAMEWORK OLD README
 
+
+The Ionic Framework command line utility makes it easy to start, build, run, and emulate [Ionic](http://ionicframework.com/) apps.
+
+Use the `ionic --help` command for more detailed task information.
 
 ## Starting an Ionic App
 
@@ -44,19 +28,25 @@ Starter templates can either come from a named template, a Github repo, a Codepe
 
 __Named template starters:__
 
-* [tabs](https://github.com/driftyco/ionic-starter-tabs) (Default)
-* [sidemenu](https://github.com/driftyco/ionic-starter-sidemenu)
-* [blank](https://github.com/driftyco/ionic-starter-blank)
+### Ionic AngularJS
 
-__Github Repo starters:__
+* super
+* conference
 
-* Any Github repo url, ex: [https://github.com/driftyco/ionic-starter-tabs](https://github.com/driftyco/ionic-starter-tabs)
-* Named templates are simply aliases to Ionic starter repos
+#### Build from Ionic blank template
 
-__Codepen URL starters:__
+* tabs
+* blank
+* sidemenu
+* tutorial
+* aws
 
-* Any Codepen url, ex: [http://codepen.io/ionic/pen/odqCz](http://codepen.io/ionic/pen/odqCz)
-* [Ionic Codepen Demos](http://codepen.io/ionic/public-list/)
+### Ionic
+
+* tabs
+* blank
+* sidemenu
+* maps
 
 __Local directory starters:__
 
@@ -73,7 +63,7 @@ __Command-line flags/options:__
 
 ## Testing in a Browser
 
-Use `ionic serve` to start a local development server for app dev and testing. This is useful for both desktop browser testing, and to test within a device browser which is connected to the same network. Additionally, this command starts LiveReload which is used to monitor changes in the file system. As soon as you save a file the browser is refreshed automatically. View [Using Sass](https://github.com/driftyco/ionic-cli/blob/master/README.md#using-sass) if you would also like to have `ionic serve` watch the project's Sass files.
+Use `ionic serve` to start a local development server for app dev and testing. This is useful for both desktop browser testing, and to test within a device browser which is connected to the same network. Additionally, this command starts LiveReload which is used to monitor changes in the file system. As soon as you save a file the browser is refreshed automatically. View, Using Sass, if you would also like to have `ionic serve` watch the project's Sass files.
 
 ```bash
 $ ionic serve [options]
@@ -109,7 +99,7 @@ $ ionic setup sass
 
 will add a `watchPatterns` propery with the default values to your `ionic.project`
 file that you can then edit, in addition to the `gulpStartupTasks` property
-described in the [Using Sass](https://github.com/driftyco/ionic-cli/blob/master/README.md#using-sass) section.
+described in the ,Using Sass , section.
 
 
 __Service Proxies:__
@@ -360,15 +350,15 @@ ionic start my_app
 PROXY=internal.proxy.com ionic start my_app
 ```
 
-
 ## Using Sass
 
 By default, starter projects are hooked up to Ionic's precompiled CSS file, which is found in the project's `www/lib/ionic/css` directory, and is linked to the app in the head of the root `index.html` file. However, Ionic projects can also be customized using [Sass](http://sass-lang.com/), which gives developers and designers "superpowers" in terms of creating and maintaining CSS. Below are two ways to setup Sass for your Ionic project (the `ionic setup sass` command simply does the manual steps for you). Once Sass has been setup for your Ionic project, then the `ionic serve` command will also watch for Sass changes.
 
 #### Setup Sass Automatically
 
-    ionic setup sass
-
+```bash
+$ ionic setup sass
+```
 
 #### Setup Sass Manually
 
