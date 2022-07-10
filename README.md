@@ -1,4 +1,4 @@
-# Application Design
+# Coachshake
 
 ## Structure
 
@@ -21,23 +21,6 @@
 		package.json		Node Package Manger Configuration
 		Procfile			Heroku Docker Processes
 		gulpfile.js			Gulp Task System 
-
-## URL
-
-	Local
-		https://localhost:3000
-		https://localhost:3001
-	Codeanywhere
-		https://drifty-abakasam720639.codeanyapp.com/
-		https://port-3001-drifty-abakasam720639.codeanyapp.com/
-	Heroku (drifty-coachshake, drifty-database)
-		https://drifty-coachshake.herokuapp.com/
-		https://drifty-database.herokuapp.com:5000/
-
-### Ports
-
-	Web Application, 3000
-	Database, 3001
 
 ## Technologies
 
@@ -63,17 +46,11 @@
 	 Bower		1.3.12
 	 Gulp		3.5.6
 	 Angular	2.0.0
-	 Cordova	4.2.0
+	Cordova		4.2.0
 	IO.js/node	3.3.1
 	MySQL		2.18.1
 
-#### Architecture
-		x86_64	Windows
-		arm7	ChromeOS
-		power	CentOS / Fedora (Yellowdog)
-		various ?
-
-# Running
+## Running
 
 	Heroku Dockerfile
 	Heroku Procfile
@@ -82,3 +59,20 @@
 
 	CentOS coachshake/
 		npm start
+
+### URL
+
+	Local
+		https://localhost:3000
+		https://localhost:3001
+	Codeanywhere
+		https://drifty-abakasam720639.codeanyapp.com/
+		https://port-3001-drifty-abakasam720639.codeanyapp.com/
+	Heroku (drifty-coachshake, drifty-database)
+		https://drifty-coachshake.herokuapp.com/
+		https://drifty-database.herokuapp.com:5000/
+
+#### Ports
+
+	Web Application, 3000
+	Database, 3001
