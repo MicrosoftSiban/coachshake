@@ -80,5 +80,5 @@
 	Heroku package.json
 		npm start
 
-	CentOS Terminal A:coachshake/
+	CentOS coachshake/
 		npm start
