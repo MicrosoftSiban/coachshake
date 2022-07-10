@@ -1,5 +1,17 @@
 # Coachshake
 
+First use of the expert system (ES), Drifty, for a lounge called Nutrition Hub.
+
+## Drifty
+
+	1 Order (fake intelligence)
+	2 Order (ES)
+	3 Inform (ES)
+	
+	NI	Workflow/Process/Algorithm - Business/Science/Programming
+	AI	Artificial Intelligence
+	SI	Expert System
+
 ## Structure
 
 	coachshake				Coachshake
