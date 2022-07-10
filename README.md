@@ -75,16 +75,10 @@
 
 # Running
 
-	Heroku Dashboard
 	Heroku Dockerfile
 	Heroku Procfile
-	Heroku ?/package.json
+	Heroku package.json
 		npm start
-			package.json
-				iojs-3.3.1/node ionic-1.3.4/bin/ionic serve --port=3000 --address=localhost
-				iojs-3.3.1/node www/js/server.js
 
 	CentOS Terminal A:coachshake/
-		iojs-3.3.1/node ionic-1.3.4/bin/ionic serve --port=3000 --address=localhost
-	CentOS Terminal B:coachshake/www/js/
-		iojs-3.3.1/node www/js/server.js
+		npm start
