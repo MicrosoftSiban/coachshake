@@ -2,37 +2,37 @@
 
 ## Structure
 
-coachshake				Coachshake
-	FRAMEWORK (IONIC V1)
-	hooks 				Cordova
-	iojs-3.3.1 			Node
-	ionic-1.3.4 		Ionic
-	node_modules		iojs-3.3.1 Local node_modules
-	scss 				Sass
-	www 				WEBSITE (HTML4)
-		www/js				Client Javascript
-		www/js/app.js		Ionic Entry Point
-		mainfest.json 		Ionic Manifest
-		service-worker.js 	Angular Service
-	bower.json			Bower Mainfest
-	config.xml			Ionic Cordova
-	ionic.project		Ionic Project
-	ionic.config.json	Ionic Configuration
-	package.json		Node Package Manger Configuration
-	Procfile			Heroku Docker Processes
-	gulpfile.js			Gulp Task System 
+	coachshake				Coachshake
+		FRAMEWORK (IONIC V1)
+		hooks 				Cordova
+		iojs-3.3.1 			Node
+		ionic-1.3.4 		Ionic
+		node_modules		iojs-3.3.1 Local node_modules
+		scss 				Sass
+		www 				WEBSITE (HTML4)
+			www/js				Client Javascript
+			www/js/app.js		Ionic Entry Point
+			mainfest.json 		Ionic Manifest
+			service-worker.js 	Angular Service
+		bower.json			Bower Mainfest
+		config.xml			Ionic Cordova
+		ionic.project		Ionic Project
+		ionic.config.json	Ionic Configuration
+		package.json		Node Package Manger Configuration
+		Procfile			Heroku Docker Processes
+		gulpfile.js			Gulp Task System 
 
 ## URL
 
-Local
-	https://localhost:3000
-	https://localhost:3001
-Codeanywhere
-	https://drifty-abakasam720639.codeanyapp.com/
-	https://port-3001-drifty-abakasam720639.codeanyapp.com/
-Heroku (drifty-coachshake, drifty-database)
-	https://drifty-coachshake.herokuapp.com/
-	https://drifty-database.herokuapp.com:5000/
+	Local
+		https://localhost:3000
+		https://localhost:3001
+	Codeanywhere
+		https://drifty-abakasam720639.codeanyapp.com/
+		https://port-3001-drifty-abakasam720639.codeanyapp.com/
+	Heroku (drifty-coachshake, drifty-database)
+		https://drifty-coachshake.herokuapp.com/
+		https://drifty-database.herokuapp.com:5000/
 
 ### Ports
 
@@ -43,44 +43,35 @@ Heroku (drifty-coachshake, drifty-database)
 
 ### Used Languages
 
-HTML		4
-CSS			3
-Javascript	ES6
-XML			1.0
-XHTML		?
-SQL			SQL:2008
+	HTML		4
+	CSS			3
+	Javascript	ES6
+	XML			1.0
+	XHTML		?
+	SQL			SQL:2008
 
 ### Services
 
-Codeanywhere	https://codeanywhere.com
-Heroku			https://heroku.com
-ClearDB			https://cleardb.com
+	Codeanywhere	https://codeanywhere.com
+	Heroku			https://heroku.com
+	ClearDB			https://cleardb.com
 
 ### Main Packages
 
-Ionic		1.3.4 (2/3/2015)
- Sass		3.1.0
- Bower		1.3.12
- Gulp		3.5.6
- Angular	2.0.0
- Cordova	4.2.0
-IO.js/node	3.3.1
-MySQL		2.18.1
+	Ionic		1.3.4 (2/3/2015)
+	 Sass		3.1.0
+	 Bower		1.3.12
+	 Gulp		3.5.6
+	 Angular	2.0.0
+	 Cordova	4.2.0
+	IO.js/node	3.3.1
+	MySQL		2.18.1
 
-Architecture:
-	x86_64	Windows
-	arm7	ChromeOS
-	power	CentOS / Fedora (Yellowdog)
-	various ?
-
-iojs-3.3.1/
-iojs-3.3.1/cli-2.1.3/node_modules
-
-ionic-1.3.4/
-ionic-1.3.4/node_modules
-
-coachshake
-coachshake/node_modules
+#### Architecture
+		x86_64	Windows
+		arm7	ChromeOS
+		power	CentOS / Fedora (Yellowdog)
+		various ?
 
 # Running
 
