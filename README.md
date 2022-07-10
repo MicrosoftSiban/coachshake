@@ -2,6 +2,8 @@
 
 First use of the expert system (ES), Drifty, for a lounge called Nutrition Hub.
 
+![Screenshot 2022-07-10 9 16 42 AM](https://user-images.githubusercontent.com/58202540/178148726-b7328556-6f6a-4ad8-a865-c2806bcbdb36.png)
+
 ## Drifty
 
 	1 Order (fake intelligence)
