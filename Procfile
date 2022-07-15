@@ -1,1 +1,1 @@
-web: heroku-7.60.2/bin/heroku ps:forward 3001 --app drifty-coachshake && heroku-7.60.2/bin/heroku ps:forward 3000 --app drifty-coachshake && iojs-3.3.1/deps/npm/cli.js start
+web: HEROKU_API_KEY=61180e6b-0bbc-42ad-a719-88e5ee53d29a && export HEROKU_API_KEY && echo $HEROKU_API_KEY && heroku-7.60.2/bin/heroku ps:forward 3001 --app drifty-coachshake && heroku-7.60.2/bin/heroku ps:forward 3000 --app drifty-coachshake && iojs-3.3.1/deps/npm/cli.js start
