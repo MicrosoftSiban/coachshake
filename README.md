@@ -11,6 +11,8 @@ First use of the expert system (ES), Drifty, for a lounge called Nutrition Hub.
 
 
 	CentOS coachshake/
+		PORT=3000
+		export PORT
 		iojs-3.3.1/node iojs-3.3.1/deps/npm/cli.js start
 
 ![Screenshot 2022-07-10 9 16 42 AM](https://user-images.githubusercontent.com/58202540/178148726-b7328556-6f6a-4ad8-a865-c2806bcbdb36.png)
@@ -85,9 +87,9 @@ First use of the expert system (ES), Drifty, for a lounge called Nutrition Hub.
 	Codeanywhere
 		https://drifty-abakasam720639.codeanyapp.com/
 		https://port-3001-drifty-abakasam720639.codeanyapp.com/
-	Heroku (drifty-coachshake, drifty-database)
+	Heroku
 		https://drifty-coachshake.herokuapp.com/
-		https://drifty-database.herokuapp.com:5000/
+		https://drifty-database.herokuapp.com/
 
 #### Ports
 
