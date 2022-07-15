@@ -2,6 +2,16 @@
 
 First use of the expert system (ES), Drifty, for a lounge called Nutrition Hub.
 
+
+## Running
+
+	Heroku Procfile
+	[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/abakasam/coachshake)
+
+
+	CentOS coachshake/
+		iojs-3.3.1/node iojs-3.3.1/deps/npm/cli.js start
+
 ![Screenshot 2022-07-10 9 16 42 AM](https://user-images.githubusercontent.com/58202540/178148726-b7328556-6f6a-4ad8-a865-c2806bcbdb36.png)
 ![Screenshot 2022-07-10 9 18 10 AM](https://user-images.githubusercontent.com/58202540/178148775-50d09a76-2532-49cc-aa16-4848f1aa7481.png)
 
@@ -65,16 +75,6 @@ First use of the expert system (ES), Drifty, for a lounge called Nutrition Hub.
 	Cordova		4.2.0
 	IO.js/node	3.3.1
 	MySQL		2.18.1
-
-## Running
-
-	Heroku Dockerfile
-	Heroku Procfile
-	Heroku package.json
-		npm start
-
-	CentOS coachshake/
-		iojs-3.3.1/node iojs-3.3.1/deps/npm/cli.js start
 
 ### URL
 
