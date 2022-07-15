@@ -5,9 +5,18 @@ First use of the expert system (ES), Drifty, for a lounge called Nutrition Hub.
 
 ## Running
 
+	General configuration
+	
+		https://github.com/MicrosoftSiban/database
+		Change URL on database: server.js and  coachshake: www/js/index.js
+
 	Heroku Procfile
 
+		Create <name>-coachshake, and <name>-database
+
+
 [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/abakasam/coachshake)
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/MicrosoftSiban/coachshake)
 
 
 	CentOS coachshake/
@@ -90,8 +99,3 @@ First use of the expert system (ES), Drifty, for a lounge called Nutrition Hub.
 	Heroku
 		https://drifty-coachshake.herokuapp.com/
 		https://drifty-database.herokuapp.com/
-
-#### Ports
-
-	Web Application, 3000
-	Database, 3001
