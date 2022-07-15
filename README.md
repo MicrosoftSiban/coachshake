@@ -6,7 +6,8 @@ First use of the expert system (ES), Drifty, for a lounge called Nutrition Hub.
 ## Running
 
 	Heroku Procfile
-	[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/abakasam/coachshake)
+
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/abakasam/coachshake)
 
 
 	CentOS coachshake/
