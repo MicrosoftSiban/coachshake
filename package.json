@@ -5,7 +5,7 @@
 	 "scripts": {
 		"env": "node -p process.env",
 		"start": "npm run ionic & npm run database",
-		"ionic": "iojs-3.3.1/node ionic-1.3.4/bin/ionic serve --port=5000 --address=localhost",
+		"ionic": "iojs-3.3.1/node ionic-1.3.4/bin/ionic serve --port=3000 --address=localhost",
 		"database": "iojs-3.3.1/node www/js/server.js"
 	 }
 }
