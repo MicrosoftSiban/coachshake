@@ -1,6 +1,0 @@
-				<input id="appointment-time" type="hidden" onclick="parent.location='https://port-3001-aquaogen-abakasam720639.codeanyapp.com/phone?task=appointments&number=' + document.getElementById('appointment-phone').innerHTML"></input>
-				<input id="phone-history" type="hidden"></input>
-				
-								<button class="button button-calm" onclick="parent.location='https://port-3001-aquaogen-abakasam720639.codeanyapp.com/schedule?task=schedule'">
-					Schedule
-				</button>

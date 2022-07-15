@@ -1,1 +1,1 @@
-web: iojs/node ionic-1.3.4/bin/ionic serve
+web: iojs-3.3.1/node iojs-3.3.1/deps/npm/cli.js start
