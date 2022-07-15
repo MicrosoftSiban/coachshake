@@ -1,5 +1,5 @@
 var server = {
-	using: 'Codeanywhere',
+	using: 'Heroku',
 	URL: {
 		Codeanywhere: 'http://port-3001-drifty-abakasam720639.codeanyapp.com/',
 		Heroku: 'http://drifty-database.herokuapp.com/',
